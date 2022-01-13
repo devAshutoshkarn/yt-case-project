@@ -35,6 +35,7 @@ document.querySelector("#btninfo").addEventListener("click", async function () {
     document.getElementById("fatchedview").style.display= "block";
      document.getElementById('btntoshow').style.display="none";
      document.getElementById('massg').style.display= "block"
+     document.querySelector('.hidandshow').style.display="block"
     
     // console.log(typeof(area))
     
@@ -64,6 +65,7 @@ document.querySelector("#btninfo").addEventListener("click", async function () {
        if (finalData.length==lines.length) {
         document.getElementById('showrangeses').style.display='block'
         document.getElementById('massg').style.display= "none"
+        window.scrollTo(0,document.body.scrollHeight);
 
      };
      
@@ -236,7 +238,7 @@ document.querySelector("#btninfoo").addEventListener("click", function () {
         }
     
 document.getElementById('viewsprice').style.display="block"
-document.getElementById('rangeview22').innerHTML = "Number of Videoes:-"+' '+fltview.length;
+document.getElementById('rangeview22').innerHTML = "Number of Videos:-"+' '+fltview.length;
 document.getElementById('totprice').innerHTML="Amount"+' '+"₹"+fltview.length*price
 console.log(fltview.length);
     // var sedata = finalData;

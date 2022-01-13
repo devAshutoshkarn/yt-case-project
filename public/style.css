@@ -78,6 +78,27 @@ body {
 #showrangeses{
 	display: none;
 }
-#viewsprice,#fatchedview{
+#viewsprice{
 	display: none;
 }
+.hidandshow{
+	display: none;
+}
+/* #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 2px;
+    background-color: #000000;
+	color: white;
+	font-size:1rem;
+	padding-top: 7px;
+	font-weight: 50;
+} */
+/* .cpy{
+	font-size:1rem;
+/
+/* .footer.container.h6{
+	font-size:100rem;
+} */
