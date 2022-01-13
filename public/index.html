@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<link rel='stylesheet' href='./style.css' />
+	<title>project</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+</head>
+
+<body>
+
+	<!-- <h1 class='heading'>Paste YouTube URL</h1> -->
+	<div class="container">
+	<textarea style="height: 181px;" class='URL-input form-control mt-4'rows="3" name="" id="videoURL" cols="30" rows="10"></textarea>
+	<!-- <h3 style="color: red;">MINIMUM VIEWS:-</h3>
+	<input type="number" id="minval">
+	<h3 style="color: red;">MIXIMUM VIEWS:-</h3>
+	<input type="number" id="maxval"><br><br>--- -->
+	<div id="massg" class="alert alert-success mt-3" role="alert">
+		<h2>Fetching data please wait....</h2>
+	</div>
+	<div>
+	<h6 class="mt-3" style="color: rgb(66, 47, 23);" >(URL, Views and Publish date)</h6>
+	<textarea style="height: 181px;" readonly class='form-control'  name="" id="fatchedview" cols="30" rows="10"></textarea>
+    </div>
+	<div id="btntoshow">
+	<button class='cent convert-button btn-warning btn-lg mt-4' id='btninfo'><b>START</b></button>
+	</div>
+	<h2 id="totvid" style="color: rgb(0, 0, 0);"></h2>
+
+<div id='showrangeses'>
+	<div class="input-group mb-3 mt-4">
+		<span class="input-group-text">MINIMUM VIEWS</span>
+		<input id="minval" type="number" class="form-control">
+		<span class="input-group-text">MAXIMUM VIEWS</span>
+		<input id="maxval" type="number" class="form-control">
+	</div>
+	<div class="input-group mb-3">
+		<span class="input-group-text">₹</span>
+		<input type="number" placeholder="Enter Price.." id="price" class="form-control">
+		<span class="input-group-text">.00</span>
+     </div>
+	<button class='cent convert-button btn btn-success mt-4' id='btninfoo'>CALCULATE</button>
+</div>	 
+
+	
+	<!-- <h2 id="rescod"></h2> -->
+	<h2 style="color: rgb(108, 255, 9);" id="rangeview22"></h2>
+	<div id="viewsprice" class="alert alert-info" role="alert">
+		<h2 id="totprice"></h2>
+
+	</div>
+
+
+	<!-- <h2 id="fistrang" style="color: rgb(0, 0, 0);"></h2>
+	<h2 id="secrange" style="color: rgb(0, 0, 0);"></h2>
+	<h2 id="thirdrange" style="color: rgb(0, 0, 0);"></h2>
+	<h2 id="fourthrange" style="color: rgb(0, 0, 0);"></h2> -->
+
+	<!-- <textarea class="getview" id="key" cols="30" rows="10"></textarea> -->
+	<!-- <textarea name="" id="videoof" cols="30" rows="10"></textarea> -->
+	<div id="show" >
+	
+		
+	<h2>VIDEO IN THIS VIEWS RANGE</h2><h1 id="numbrofvideo" style="color: rgb(0, 255, 0);"></h1>
+    </div>
+	<!-- <input class='URL-input' id="videoURL" placeholder='https://www.youtube.com/watch?v=MtN1YnoL46Q' /> -->
+	<!-- <select class='opt'>
+		<option value='mp3'>mp3</option>
+		<option value='mp4'>mp4</option>
+	</select> -->
+    <!-- <H3 id="view"></H3> -->
+</div>
+
+	
+	<!-- <button class='convert-button' id='btn'>Convert</button> -->
+	<script src='./script.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	
+</body>
+
+</html>
