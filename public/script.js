@@ -1,5 +1,5 @@
 let URLinput = document.querySelector('.URL-input');
-let serverURL = 'http://localhost:4000';
+let serverURL = 'https://yt-cash-calculator.herokuapp.com/';
 var sttonum;
 document.querySelector("#btninfo").addEventListener("click", async function () {
 var area = document.getElementById("videoURL");
