@@ -4,9 +4,10 @@
   "description": "This is a repository that has sample code for my [Medium Article](https://blog.usejournal.com/how-i-made-my-own-youtube-downloader-using-javascript-and-node-js-160b172f6e10)",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server/index.js"
   },
-  "author": "",
+  "author": "ashutosh karn",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
