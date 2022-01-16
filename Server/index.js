@@ -9,9 +9,11 @@ app.listen(PORT, () => {
 });
 app.use(express.json());
 app.use(express.static("public"));
+
 app.get("/",function(request,response){
 	response.sendFile(__dirname + "public/index.html");
 });
+
 app.get("/videoInfo",async function(request,response){
 	const videoURL = request.query.videoURL;
 	const info = await ytdl.getInfo(videoURL);

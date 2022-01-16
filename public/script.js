@@ -1,5 +1,5 @@
 let URLinput = document.querySelector('.URL-input');
-let serverURL = 'http://localhost:4000';
+let serverURL = 'https://yt-cash-calculator.herokuapp.com';
 var sttonum;
 document.querySelector("#btninfo").addEventListener("click", async function () {
 var area = document.getElementById("videoURL");
@@ -9,7 +9,7 @@ document.getElementById('btntoshow').style.display="none";
 document.getElementById('massg').style.display= "block"
 document.querySelector('.hidandshow').style.display="block"
 var lines = area.value.replace(/\r\n/g, "\n").split("\n").filter(line => line);
-document.getElementById("totvid").innerHTML = "TOTAL NUMBER OF VIDEO:-" +' '+ lines.length;
+document.getElementById("totvid").innerHTML = "TOTAL NUMBER OF VIDEO:-" +' '+ `<b style="color:red" >${lines.length}</b>`;
 finalData = [];
 for (const item of lines) {
 const response = await fetch(serverURL + "/videoInfo?videoURL=" + item);
@@ -26,6 +26,7 @@ document.querySelector("#btninfoo").addEventListener("click", function () {
 var minval = document.getElementById("minval").value;
 var maxval = document.getElementById("maxval").value;
 var price = document.getElementById('price').value;
+var viewsprice = document.getElementById('viewpoint');
 if (minval==''&&maxval==''&&price=='') {
 alert("Please Enter Minimum, Maximum and Price")
 return};
@@ -34,5 +35,7 @@ for (k = 0; k < sttonum.length; k ++) {
 if(sttonum[k]>=minval && sttonum[k]<=maxval){
 fltview.push(sttonum[k])}};
 document.getElementById('viewsprice').style.display="block"
-document.getElementById('rangeview22').innerHTML = "Number of Videos:-"+' '+fltview.length;
-document.getElementById('totprice').innerHTML="Amount"+' '+"₹"+fltview.length*price});
+document.getElementById('rangeview22').innerHTML = "Number of Videos:-"+' '+`<b style="color:black">${fltview.length}</b>`;
+document.getElementById('totprice').innerHTML="Amount"+' '+"₹"+`<b style="color:#cd1a1a">${fltview.length*price}</b>`;
+viewsprice.scrollIntoView(); 
+});
