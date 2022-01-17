@@ -27,10 +27,10 @@ var minval = document.getElementById("minval").value;
 var maxval = document.getElementById("maxval").value;
 var price = document.getElementById('price').value;
 var viewsprice = document.getElementById('viewpoint');
-if (minval==''&&maxval==''&&price=='') {
+if (minval==''&&maxval=='') {
 alert("Please Enter Minimum, Maximum and Price")
-return};
-const fltview = [];
+return;
+};const fltview = [];
 for (k = 0; k < sttonum.length; k ++) {
 if(sttonum[k]>=minval && sttonum[k]<=maxval){
 fltview.push(sttonum[k])}};
