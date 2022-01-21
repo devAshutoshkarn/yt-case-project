@@ -1,5 +1,5 @@
 let URLinput = document.querySelector('.URL-input');
-let serverURL = 'https://yt-cash-calculator.herokuapp.com';
+let serverURL = 'https://yt-cash-calculate.openode.dev';
 var sttonum;
 document.querySelector("#btninfo").addEventListener("click", async function () {
 var area = document.getElementById("videoURL");
@@ -37,5 +37,4 @@ fltview.push(sttonum[k])}};
 document.getElementById('viewsprice').style.display="block"
 document.getElementById('rangeview22').innerHTML = "Number of Videos:-"+' '+`<b style="color:black">${fltview.length}</b>`;
 document.getElementById('totprice').innerHTML="Amount"+' '+"₹"+`<b style="color:#cd1a1a">${fltview.length*price}</b>`;
-viewsprice.scrollIntoView(); 
-});
+viewsprice.scrollIntoView();});
