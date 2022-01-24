@@ -1,6 +1,6 @@
 // All codes is written by Ashutosh kumar karn(A teen Programmer!)
 let URLinput = document.querySelector('.URL-input');
-let serverURL = 'http://localhost:4000';
+let serverURL = 'https://yt-cash-calculate.openode.dev';
 var sttonum;document.querySelector("#btninfo").addEventListener("click", async function () {
 var area = document.getElementById("videoURL");
 if (area.value=='') {alert('Please Enter youtube url' );return}
