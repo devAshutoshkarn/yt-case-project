@@ -1,7 +1,7 @@
 {
   "name": "youtubedownloader-master",
   "version": "1.0.0",
-  "description": "This is a repository that has sample code for my [Medium Article](https://blog.usejournal.com/how-i-made-my-own-youtube-downloader-using-javascript-and-node-js-160b172f6e10)",
+  "description": "yt cash calculator for youtuber's",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,7 @@
   "author": "ashutosh karn",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "ytdl-core": "^4.10.0"
