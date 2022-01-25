@@ -1,4 +1,4 @@
-// All code is written by Ashutosh kumar karn(A Teen Programmer!)
+// All code is written by Ashutosh karn(A Teen Programmer!)
 const express = require('express');
 const compression = require('compression');
 const cors = require('cors');
