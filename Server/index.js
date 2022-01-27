@@ -1,4 +1,4 @@
-// All code is written by Ashutosh karn(A Teen Programmer!)
+// All codes is written by Ashutosh karn(A Teen Programmer!)
 const express = require('express');
 const compression = require('compression');
 const cors = require('cors');
@@ -6,7 +6,9 @@ const ytdl = require('ytdl-core');
 const path = require('path')
 const app = express();
 const PORT = process.env.PORT || 4000;
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:4000', 'https://yt-cash-calculate.openode.dev/']
+}));
 app.use(compression());
 app.listen(PORT);
 const apipath = path.join(__dirname, "../public");
