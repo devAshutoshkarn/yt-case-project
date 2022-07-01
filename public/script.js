@@ -1,6 +1,6 @@
 // All codes is written by Ashutosh karn(A Teen Programmer!)
 let URLinput = document.querySelector('.URL-input');
-let serverURL = 'https://yt-cash-calculate.openode.dev';
+let serverURL = 'https://ytcash.herokuapp.com';
 var sttonum;
 document.querySelector("#btninfo").addEventListener("click", async function () {
     var area = document.getElementById("videoURL");
